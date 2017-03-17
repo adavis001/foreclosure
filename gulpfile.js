@@ -37,7 +37,7 @@ gulp.task('watch', function() {
   gulp.watch(paths.watch, ['test']);
 });
 
-gulp.task('test', ['lint', 'mocha', 'watch']);
+gulp.task('test', [ 'mocha', 'watch']);
 
 gulp.task('default', ['test']);
 
